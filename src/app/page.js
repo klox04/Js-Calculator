@@ -19,14 +19,13 @@ export default function Home() {
     setResult("")
   }
   return (
-   <div>
+   <div  class="flex flex-col justify-center items-center min-h-screen bg-gray-100">
     <div class="flex justify-center items-center mt-5">
-    <hi class="font-weight: 700">Calculator</hi>
+    <hi class="font-bold text-2xl">Calculator</hi>
     </div>
-    <div className="w-full min-h-screen flex justify-center items-center bg-white-900">
-    <div className="relative w-[380px] h-[420px] bg-transparent-400 rounded-lg z-10 p-5  border-solid border-2 border-indigo-600" >
-    <form class="flex justify-center items-center">
-      <input class="flex-initial w-50 h-50 bg-gray-900 rounded-md text-right text-white mr-2" type="text" value={result}></input>
+    <div class="relative w-full max-w-md mt-5 bg-gray-200 rounded-lg border-2 border-gray-300 p-5" >
+    <form class="flex justify-end items-center mb-3">
+      <input  class="flex-1 w-full h-12 px-3 rounded-lg border-2 border-gray-300 text-right text-lg font-bold" type="text" value={result}></input>
     </form>
    
       <div class="flex justify-center items-center mt-5 ">
@@ -61,7 +60,7 @@ export default function Home() {
 
     </div>
 
-    </div>
+   
     </div>
   )
 }
